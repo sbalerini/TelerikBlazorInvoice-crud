@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorOE01.styles.css",
+      "PackagePath": "staticwebassets\\BlazorOE01.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\manifest.webmanifest",
+      "PackagePath": "staticwebassets\\manifest.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorOE01.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorOE01.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorOE01.props",
+      "PackagePath": "build\\BlazorOE01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorOE01.props",
+      "PackagePath": "buildMultiTargeting\\BlazorOE01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorOE01.props",
+      "PackagePath": "buildTransitive\\BlazorOE01.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

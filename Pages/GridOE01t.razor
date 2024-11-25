@@ -1,0 +1,141 @@
+﻿@page "/gridoe1"
+@inject HttpClient Http
+@using BlazorOE01.Common.OE01
+﻿@using BlazorOE01.Pages
+@using System.IO
+
+@using Telerik.DataSource;
+
+
+<h3>Clientes</h3>
+
+<div class="container-fluid my-3 py-3">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mt-4" id="basic-info">
+                <div class="card-body pt-0">
+                    <div class="row">
+                        <div class="col-sm-2 col-2">
+                            <div class="input-group input-group-static">
+                                <label>Top</label>
+                                <TelerikNumericTextBox Min="0" Class="form-control" @bind-Value="txtTop" />
+                            </div>
+                        </div>
+                    </div><br />
+                    <div class="col-4">
+                        <button class="btn btn-primary" type="button" @onclick="@MostrarDatos">Ver Datos</button>
+
+                    </div>
+                    <div class="col-3">
+                        <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">Export to Excel</GridCommandButton>
+                        <TelerikButton OnClick="@(async () => await GridRef.SaveAsExcelFileAsync())">Descarga Excel</TelerikButton>
+
+                    </div>
+                </div>
+                <div class="m-4 mt-0">
+                    <TelerikGrid @ref="@GridRef"
+                                 Data="@ttCustomers"
+                                 OnUpdate="@UpdateHandler"
+                                 OnDelete="@DeleteHandler"
+                                 OnCreate="@CreateHandler"
+                                 ConfirmDelete="true"
+                                 Groupable="true"
+                                 FilterMode="GridFilterMode.FilterMenu"
+                                 Resizable="true"
+                                 Reorderable="true"
+                                 EditMode="GridEditMode.Popup"
+                                 Height="350px"
+                                 Sortable="true"
+                                 SortMode="@SortMode.Single"
+                                 Pageable="true"
+                                 PageSize="10">
+
+                        <GridExport>
+                            <GridExcelExport FileName="telerik-grid-export" AllPages="@ExportAllPages" />
+                        </GridExport>
+
+                        <GridColumns>
+                            <GridColumn Field="@nameof(TTCustomer.CustNum)" Width="80px" Title="CustNum" Lockable="true" />
+                            <GridColumn Field="@nameof(TTCustomer.Name)" Width="140px" Title="Name" />
+                            <GridColumn Field="@nameof(TTCustomer.Country)" Width="140px" Title="Country" />
+                            <GridColumn Field="@nameof(TTCustomer.Address)" Width="140px" Title="Address" />
+                            <GridColumn Field="@nameof(TTCustomer.City)" Width="140px" Title="City" />
+                        </GridColumns>
+                    </TelerikGrid>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private TelerikGrid<TTCustomer> GridRef { get; set; }
+    bool ExportAllPages { get; set; }
+
+    private MemoryStream exportedExcelStream { get; set; }
+
+    private async Task GetTheDataAsAStream()
+    {
+        MemoryStream finalizedStream = await GridRef.ExportToExcelAsync();
+
+        exportedExcelStream = new MemoryStream(finalizedStream.ToArray());
+    }
+    public List<TTCustomer> Products { get; set; }
+
+    public async Task UpdateHandler(GridCommandEventArgs args)
+    {
+       
+    }
+
+    public async Task DeleteHandler(GridCommandEventArgs args)
+    {
+       
+    }
+
+    public async Task CreateHandler(GridCommandEventArgs args)
+    {
+       
+    }
+
+    int txtTop { get; set; } = 0;
+    public List<TTCustomer> ttCustomers { get; set; }
+
+    protected async Task MostrarDatos()
+    {
+        ttCustomers = await GetCustomersByTop_OE(txtTop);
+    }
+
+    private async Task<List<TTCustomer>> GetCustomersByTop_OE(int itop)
+    {
+        List<TTCustomer> ttCustomers = new();
+        string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/";
+        
+        using (var http = new HttpClient())
+        {
+            http.BaseAddress = new Uri(baseURL);
+            if (itop == 0)
+            {
+                var request1 = await http.GetAsync($"GetCustomerByTop");
+
+                if (request1.IsSuccessStatusCode)
+                {
+                    var response = await request1.Content.ReadFromJsonAsync<DTODSGeneral>();
+                    ttCustomers = response.dsCustomer.ttCustomer.ToList();
+                }
+
+            }
+            else
+            {
+                var request = await http.GetAsync($"GetCustomerByTop?filter=CustNum={itop}");
+
+                if (request.IsSuccessStatusCode)
+                {
+                    var response = await request.Content.ReadFromJsonAsync<DTODSGeneral>();
+                    ttCustomers = response.dsCustomer.ttCustomer.ToList();
+                }
+            }
+        }
+
+        return ttCustomers;
+    }
+}
