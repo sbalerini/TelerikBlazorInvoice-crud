@@ -7670,11 +7670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\BlazorOE01.csproj",
+      "projectUniqueName": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorOE01.csproj",
       "projectName": "BlazorOE01",
-      "projectPath": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\BlazorOE01.csproj",
+      "projectPath": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorOE01.csproj",
       "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\obj\\",
+      "outputPath": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,24 +1,28 @@
 ﻿
 namespace BlazorOE01.Common.OE01
 {
-    public class DTODSGeneral
+
+    public class Rootobject
     {
-        public Dsgeneral dsCustomer { get; set; }
+        public Dsgeneral dsGeneral { get; set; }
     }
 
     public class Dsgeneral
     {
-        public TTCustomer[] ttCustomer { get; set; }
+        public Ttinvoice[] ttinvoice { get; set; }
     }
 
-    public class TTCustomer
+    public class Ttinvoice
     {
-        public int CustNum { get; set; }
-        public string Country { get; set; }
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
+        public int Invoicenum { get; set; }
 
+        public int CustNum { get; set; }
+        public float Amount { get; set; }
+        public float TotalPaid { get; set; }
+        public float Adjustment { get; set; }
+        public float ShipCharge { get; set; }
     }
+
+
 }
 

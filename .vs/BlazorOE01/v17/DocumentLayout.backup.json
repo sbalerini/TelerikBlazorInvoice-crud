@@ -1,42 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\",
+  "WorkspaceRootPath": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\pages\\gridoe01t.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:pages\\gridoe01t.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\blazortelerik.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\blazortelerik.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:blazortelerik.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\pages\\gridoe01t.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:pages\\gridoe01t.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\wwwroot\\service-worker.published.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:wwwroot\\service-worker.published.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\common\\oe01\\dtodsgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:common\\oe01\\dtodsgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\blazoroe01.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:blazoroe01.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\wwwroot\\css\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:wwwroot\\css\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\sebastian\\downloads\\demo_blazorgrid_nov2024\\demo_blazorgrid_nov2024\\blazoroe01\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,20 +38,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 324,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GridOE01t.razor",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\Pages\\GridOE01t.razor",
+              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Pages\\GridOE01t.razor",
               "RelativeDocumentMoniker": "Pages\\GridOE01t.razor",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\Pages\\GridOE01t.razor",
+              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Pages\\GridOE01t.razor",
               "RelativeToolTip": "Pages\\GridOE01t.razor",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAABzAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-20T18:29:34.099Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlazorTelerik.csproj",
+              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorTelerik.csproj",
+              "RelativeDocumentMoniker": "BlazorTelerik.csproj",
+              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorTelerik.csproj",
+              "RelativeToolTip": "BlazorTelerik.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-06T13:06:47.68Z",
               "EditorCaption": ""
             },
             {
@@ -68,99 +73,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BlazorTelerik.csproj",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\BlazorTelerik.csproj",
-              "RelativeDocumentMoniker": "BlazorTelerik.csproj",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\BlazorTelerik.csproj",
-              "RelativeToolTip": "BlazorTelerik.csproj",
+              "DocumentIndex": 3,
+              "Title": "BlazorOE01",
+              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorOE01.csproj",
+              "RelativeDocumentMoniker": "BlazorOE01.csproj",
+              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorOE01.csproj",
+              "RelativeToolTip": "BlazorOE01.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-22T17:01:12.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "bootstrap.min.css",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\bootstrap\\bootstrap.min.css",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-              "RelativeToolTip": "wwwroot\\css\\bootstrap\\bootstrap.min.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-22T16:34:53.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\index.html",
-              "RelativeToolTip": "wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-22T16:34:16.084Z"
+              "WhenOpened": "2024-12-05T13:10:26.563Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "service-worker.published.js",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\service-worker.published.js",
-              "RelativeDocumentMoniker": "wwwroot\\service-worker.published.js",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\wwwroot\\service-worker.published.js",
-              "RelativeToolTip": "wwwroot\\service-worker.published.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-22T16:34:12.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\Program.cs",
+              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\Program.cs",
+              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T16:33:11.184Z"
+              "WhenOpened": "2024-12-04T19:33:10.484Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "App.razor",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\App.razor",
-              "RelativeDocumentMoniker": "App.razor",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\App.razor",
-              "RelativeToolTip": "App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T16:32:43.818Z"
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "wwwroot\\css\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-04T17:59:48.433Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\_Imports.razor",
-              "RelativeDocumentMoniker": "_Imports.razor",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\_Imports.razor",
-              "RelativeToolTip": "_Imports.razor",
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\App.razor",
+              "RelativeToolTip": "App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T16:32:42.19Z"
+              "WhenOpened": "2024-12-04T14:16:29.842Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-22T16:31:52.823Z"
+              "DocumentIndex": 2,
+              "Title": "DTODSGeneral.cs",
+              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Common\\OE01\\DTODSGeneral.cs",
+              "RelativeDocumentMoniker": "Common\\OE01\\DTODSGeneral.cs",
+              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Common\\OE01\\DTODSGeneral.cs",
+              "RelativeToolTip": "Common\\OE01\\DTODSGeneral.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:02:44.592Z",
+              "EditorCaption": ""
             }
           ]
         }

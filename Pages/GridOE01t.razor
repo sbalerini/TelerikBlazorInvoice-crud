@@ -3,16 +3,18 @@
 @using BlazorOE01.Common.OE01
 ﻿@using BlazorOE01.Pages
 @using System.IO
+@using System.Dynamic
+
 
 @using Telerik.DataSource;
 
 
-<h3>Clientes</h3>
+<h3>Invoice</h3>
 
 <div class="container-fluid my-3 py-3">
     <div class="row">
         <div class="col-12">
-            <div class="card mt-4" id="basic-info">
+            <div class="card mt-8" id="basic-info">
                 <div class="card-body pt-0">
                     <div class="row">
                         <div class="col-sm-2 col-2">
@@ -22,45 +24,64 @@
                             </div>
                         </div>
                     </div><br />
-                    <div class="col-4">
+                    <div class="col-4 col-xs-6 md-5">
                         <button class="btn btn-primary" type="button" @onclick="@MostrarDatos">Ver Datos</button>
 
                     </div>
-                    <div class="col-3">
+
+                    <div class="col-3 col-xs-6 mt-3">
                         <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">Export to Excel</GridCommandButton>
+                    </div>
+                    <div class="col-3">
                         <TelerikButton OnClick="@(async () => await GridRef.SaveAsExcelFileAsync())">Descarga Excel</TelerikButton>
 
                     </div>
                 </div>
-                <div class="m-4 mt-0">
+                <div class="m-8 mt-4">
                     <TelerikGrid @ref="@GridRef"
-                                 Data="@ttCustomers"
-                                 OnUpdate="@UpdateHandler"
-                                 OnDelete="@DeleteHandler"
-                                 OnCreate="@CreateHandler"
-                                 ConfirmDelete="true"
-                                 Groupable="true"
-                                 FilterMode="GridFilterMode.FilterMenu"
-                                 Resizable="true"
-                                 Reorderable="true"
-                                 EditMode="GridEditMode.Popup"
-                                 Height="350px"
-                                 Sortable="true"
-                                 SortMode="@SortMode.Single"
-                                 Pageable="true"
-                                 PageSize="10">
+                    Data="@ttInvoices"
+                    OnDelete="@DeleteHandler"
+                    OnUpdate="@UpdateHandler"
+                    OnCreate="@CreateHandler"
+
+                    ConfirmDelete="true"
+                    Groupable="true"
+                    FilterMode="GridFilterMode.FilterMenu"
+                    Resizable="true"
+                    Reorderable="true"
+                    EditMode="GridEditMode.Popup"
+                    Height="350px"
+                    Sortable="true"
+                    SortMode="@SortMode.Single"
+                    Pageable="true"
+                    PageSize="10">
 
                         <GridExport>
                             <GridExcelExport FileName="telerik-grid-export" AllPages="@ExportAllPages" />
                         </GridExport>
 
                         <GridColumns>
-                            <GridColumn Field="@nameof(TTCustomer.CustNum)" Width="80px" Title="CustNum" Lockable="true" />
-                            <GridColumn Field="@nameof(TTCustomer.Name)" Width="140px" Title="Name" />
-                            <GridColumn Field="@nameof(TTCustomer.Country)" Width="140px" Title="Country" />
-                            <GridColumn Field="@nameof(TTCustomer.Address)" Width="140px" Title="Address" />
-                            <GridColumn Field="@nameof(TTCustomer.City)" Width="140px" Title="City" />
+                            <GridCheckboxColumn></GridCheckboxColumn>
+                            @foreach (var col in typeof(Ttinvoice).GetProperties())
+                            {
+                                <GridColumn Field="@(col.Name)" Width="80px" Title="@(col.Name)" Lockable="true" />
+                                //        <td><button @onclick="() => EditProducto(col)" class="btn btn-warning"> EDICCION </button></td>
+                                //     <td><button @onclick="() => DeleteProducto(col.Name)" class="btn btn-warning"> ELIMINAR </button></td>
+
+                            }
+
+                            <GridCommandColumn Width="260px">
+
+
+                                <GridCommandButton Command="Edit" Icon="@SvgIcon.Pencil" ThemeColor="@ThemeConstants.Button.ThemeColor.Primary">Editar</GridCommandButton>
+                                <GridCommandButton Command="Delete" Icon="@SvgIcon.Trash">Delete</GridCommandButton>
+                            </GridCommandColumn>
+
                         </GridColumns>
+                        <GridToolBarTemplate>
+                            <GridCommandButton Command="Add" Icon="@SvgIcon.Plus">Agregar Factura</GridCommandButton>
+                        </GridToolBarTemplate>
+
                     </TelerikGrid>
                 </div>
             </div>
@@ -69,7 +90,28 @@
 </div>
 
 @code {
-    private TelerikGrid<TTCustomer> GridRef { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        //  Products = new ObservableCollection<Product>(data);
+    }
+
+
+    private TelerikGrid<Ttinvoice> GridRef { get; set; }
+
+    protected override void OnInitialized()
+    {
+        LoadData();
+    }
+
+    private void LoadData()
+    {
+        // Data = employeeDirectoryService.GetEmployeeDirectories();
+    }
+
+
+
     bool ExportAllPages { get; set; }
 
     private MemoryStream exportedExcelStream { get; set; }
@@ -80,62 +122,130 @@
 
         exportedExcelStream = new MemoryStream(finalizedStream.ToArray());
     }
-    public List<TTCustomer> Products { get; set; }
+
+
+
+    public async Task CreateHandler(GridCommandEventArgs args)
+    {
+        string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice";
+
+
+        var arsItem = (Ttinvoice)args.Item;
+
+        var rootObject = new Rootobject
+        {
+                dsGeneral = new Dsgeneral
+                {
+                    ttinvoice = new Ttinvoice[] { arsItem }
+                }
+        };
+
+
+        using (HttpClient httpClient = new HttpClient())
+        {
+            var response = await httpClient.PostAsJsonAsync(baseURL, rootObject);
+            Console.WriteLine(response);
+            if (response.IsSuccessStatusCode)
+            {
+                await MostrarDatos();
+            }
+        }
+
+
+
+    }
 
     public async Task UpdateHandler(GridCommandEventArgs args)
     {
-       
+        string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice";
+
+
+        var arsItem = (Ttinvoice)args.Item;
+
+        var rootObject = new Rootobject
+        {
+                dsGeneral = new Dsgeneral
+                {
+                    ttinvoice = new Ttinvoice[] { arsItem }
+                }
+        };
+
+
+        using (HttpClient httpClient = new HttpClient())
+        {
+            var response = await httpClient.PutAsJsonAsync(baseURL, rootObject);
+            Console.WriteLine(response);
+            if (response.IsSuccessStatusCode)
+            {
+                await MostrarDatos();
+            }
+        }
+
+
     }
 
     public async Task DeleteHandler(GridCommandEventArgs args)
     {
-       
+
+        var arsItem = (Ttinvoice)args.Item;
+        int dr = arsItem.Invoicenum;
+        int dr2 = arsItem.CustNum;
+        string cadena = dr.ToString();
+
+        string baseURL = $"http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice?wId={dr}&wId2={dr2}";
+
+        using (HttpClient httpClient = new HttpClient())
+        {
+            var response = await httpClient.DeleteAsync(baseURL);
+            Console.WriteLine(response);
+            if (response.IsSuccessStatusCode)
+            {
+                await MostrarDatos();
+            }
+        }
     }
 
-    public async Task CreateHandler(GridCommandEventArgs args)
-    {
-       
-    }
+
 
     int txtTop { get; set; } = 0;
-    public List<TTCustomer> ttCustomers { get; set; }
+
+    public List<Ttinvoice> ttInvoices { get; set; }
 
     protected async Task MostrarDatos()
     {
-        ttCustomers = await GetCustomersByTop_OE(txtTop);
+        ttInvoices = await GetInvoice(txtTop);
     }
 
-    private async Task<List<TTCustomer>> GetCustomersByTop_OE(int itop)
+    private async Task<List<Ttinvoice>> GetInvoice(int itop)
     {
-        List<TTCustomer> ttCustomers = new();
+        List<Ttinvoice> ttInvoices = new();
         string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/";
-        
+
+
         using (var http = new HttpClient())
         {
             http.BaseAddress = new Uri(baseURL);
-            if (itop == 0)
+
             {
-                var request1 = await http.GetAsync($"GetCustomerByTop");
+                var request1 = await http.GetAsync($"Invoice");
 
                 if (request1.IsSuccessStatusCode)
                 {
-                    var response = await request1.Content.ReadFromJsonAsync<DTODSGeneral>();
-                    ttCustomers = response.dsCustomer.ttCustomer.ToList();
+                    var response = await request1.Content.ReadFromJsonAsync<Rootobject>();
+                    ttInvoices = response.dsGeneral.ttinvoice.ToList();
+
                 }
 
             }
-            else
-            {
-                var request = await http.GetAsync($"GetCustomerByTop?filter=CustNum={itop}");
-
-                if (request.IsSuccessStatusCode)
-                {
-                    var response = await request.Content.ReadFromJsonAsync<DTODSGeneral>();
-                    ttCustomers = response.dsCustomer.ttCustomer.ToList();
-                }
-            }
+          
         }
 
-        return ttCustomers;
+        return ttInvoices;
     }
+
+   
+    
+        
+
+
 }

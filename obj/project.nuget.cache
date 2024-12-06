@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8SM+h1m3Y3Q=",
+  "dgSpecHash": "dABqY37oG10=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sebastian\\Downloads\\DEMO_BlazorGrid_Nov2024\\DEMO_BlazorGrid_Nov2024\\BlazorOE01\\BlazorOE01.csproj",
+  "projectFilePath": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorOE01.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.8\\microsoft.aspnetcore.authorization.8.0.8.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.8\\microsoft.aspnetcore.components.8.0.8.nupkg.sha512",

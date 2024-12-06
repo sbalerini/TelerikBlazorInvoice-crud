@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "yrAr0uIe",
+  "version": "KvVIl16f",
   "assets": [
     {
       "hash": "sha256-mIctJBjrB3XI2p7cc8gnsGUpEqVKWDIxoSytpFBH9NQ=",
@@ -42,11 +42,11 @@ self.assetsManifest = {
       "url": "_content/Telerik.UI.for.Blazor.Trial/js/telerik-blazor.js"
     },
     {
-      "hash": "sha256-SvaWnIVyEhhwZaO9Q7avWcxGoi/JvRTniB+Ixa8oAgo=",
+      "hash": "sha256-z4ZU8/2NCtRDFLCBmaWZZU3+ZiVqio9skavYmDpQyuo=",
       "url": "_framework/BlazorOE01.pdb"
     },
     {
-      "hash": "sha256-G6yfRqupBxYQEu1FO4kiYexrQ2/AlYTqtCcSiAkxNy4=",
+      "hash": "sha256-Co2o+vUWZFwFvsw++NUPVooO8+0jEy1NRC/xhsmkAZQ=",
       "url": "_framework/BlazorOE01.wasm"
     },
     {
@@ -846,7 +846,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.wasm"
     },
     {
-      "hash": "sha256-50ecMZZIS7BwjnGP2Gi5NxEoyolLRlzR8sv9wyaxRB0=",
+      "hash": "sha256-h744EiyTSDsrzJa7+cyXghvVXxLylS8zU8s/Acddr7M=",
       "url": "_framework/blazor.boot.json"
     },
     {
