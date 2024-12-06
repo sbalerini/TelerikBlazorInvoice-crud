@@ -50,11 +50,11 @@
                     Resizable="true"
                     Reorderable="true"
                     EditMode="GridEditMode.Popup"
-                    Height="350px"
+                    Height="650px"
                     Sortable="true"
                     SortMode="@SortMode.Single"
                     Pageable="true"
-                    PageSize="10">
+                    PageSize="15">
 
                         <GridExport>
                             <GridExcelExport FileName="telerik-grid-export" AllPages="@ExportAllPages" />
@@ -65,8 +65,7 @@
                             @foreach (var col in typeof(Ttinvoice).GetProperties())
                             {
                                 <GridColumn Field="@(col.Name)" Width="80px" Title="@(col.Name)" Lockable="true" />
-                                //        <td><button @onclick="() => EditProducto(col)" class="btn btn-warning"> EDICCION </button></td>
-                                //     <td><button @onclick="() => DeleteProducto(col.Name)" class="btn btn-warning"> ELIMINAR </button></td>
+
 
                             }
 
@@ -226,18 +225,38 @@
         {
             http.BaseAddress = new Uri(baseURL);
 
+            if (itop == 0)
             {
-                var request1 = await http.GetAsync($"Invoice");
-
-                if (request1.IsSuccessStatusCode)
                 {
-                    var response = await request1.Content.ReadFromJsonAsync<Rootobject>();
-                    ttInvoices = response.dsGeneral.ttinvoice.ToList();
+                    var request1 = await http.GetAsync($"Invoice");
+
+                    if (request1.IsSuccessStatusCode)
+                    {
+                        var response = await request1.Content.ReadFromJsonAsync<Rootobject>();
+                        ttInvoices = response.dsGeneral.ttinvoice.ToList();
+
+                    }
+
+                }
+            }
+            else 
+            {
+                {
+                    var request1 = await http.GetAsync($"Invoice?itop={itop}");
+
+                    if (request1.IsSuccessStatusCode)
+                    {
+                        var response = await request1.Content.ReadFromJsonAsync<Rootobject>();
+                        ttInvoices = response.dsGeneral.ttinvoice.ToList();
+
+                    }
 
                 }
 
+
+
             }
-          
+
         }
 
         return ttInvoices;
