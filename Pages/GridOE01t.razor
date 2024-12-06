@@ -15,7 +15,7 @@
     <div class="row">
         <div class="col-12">
             <div class="card mt-8" id="basic-info">
-                <div class="card-body pt-0">
+                <div class="card-body pt-4">
                     <div class="row">
                         <div class="col-sm-2 col-2">
                             <div class="input-group input-group-static">
@@ -64,7 +64,7 @@
                             <GridCheckboxColumn></GridCheckboxColumn>
                             @foreach (var col in typeof(Ttinvoice).GetProperties())
                             {
-                                <GridColumn Field="@(col.Name)" Width="80px" Title="@(col.Name)" Lockable="true" />
+                                    <GridColumn Field="@(col.Name)" Width="80px" Title="@(col.Name)" Lockable="true" />
                                 //        <td><button @onclick="() => EditProducto(col)" class="btn btn-warning"> EDICCION </button></td>
                                 //     <td><button @onclick="() => DeleteProducto(col.Name)" class="btn btn-warning"> ELIMINAR </button></td>
 
@@ -88,6 +88,7 @@
         </div>
     </div>
 </div>
+
 
 @code {
 
@@ -127,7 +128,7 @@
 
     public async Task CreateHandler(GridCommandEventArgs args)
     {
-        string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice";
+        string baseURL = "http://192.168.10.46:8810/ApiFirst/web/pdo/ApiFirstService/EmpleadoBE";
 
 
         var arsItem = (Ttinvoice)args.Item;
@@ -157,7 +158,7 @@
 
     public async Task UpdateHandler(GridCommandEventArgs args)
     {
-        string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice";
+        string baseURL = "http://192.168.10.46:8810/ApiFirst/web/pdo/ApiFirstService/EmpleadoBE";
 
 
         var arsItem = (Ttinvoice)args.Item;
@@ -192,7 +193,7 @@
         int dr2 = arsItem.CustNum;
         string cadena = dr.ToString();
 
-        string baseURL = $"http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice?wId={dr}&wId2={dr2}";
+        string baseURL = $"http://192.168.10.46:8810/ApiFirst/web/pdo/ApiFirstService/EmpleadoBE?wId={dr}&wId2={dr2}";
 
         using (HttpClient httpClient = new HttpClient())
         {
@@ -219,7 +220,7 @@
     private async Task<List<Ttinvoice>> GetInvoice(int itop)
     {
         List<Ttinvoice> ttInvoices = new();
-        string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/";
+        string baseURL = "http://192.168.10.46:8810/ApiFirst/rest/Servicio/Invoice";
 
 
         using (var http = new HttpClient())

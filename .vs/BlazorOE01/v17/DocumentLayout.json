@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\",
+  "WorkspaceRootPath": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\blazortelerik.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:blazortelerik.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\pages\\gridoe01t.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\alejandra\\desktop\\telerik grid  -ultima version\\telerikblazorinvoice-crud\\pages\\gridoe01t.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:pages\\gridoe01t.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\common\\oe01\\dtodsgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\alejandra\\desktop\\telerik grid  -ultima version\\telerikblazorinvoice-crud\\common\\oe01\\dtodsgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:common\\oe01\\dtodsgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\blazoroe01.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\alejandra\\desktop\\telerik grid  -ultima version\\telerikblazorinvoice-crud\\common\\oe01\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:common\\oe01\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\alejandra\\desktop\\telerik grid  -ultima version\\telerikblazorinvoice-crud\\blazortelerik.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:blazortelerik.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\alejandra\\desktop\\telerik grid  -ultima version\\telerikblazorinvoice-crud\\blazoroe01.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:blazoroe01.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\alejandra\\desktop\\telerik grid  -ultima version\\telerikblazorinvoice-crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\alejandra\\desktop\\telerik grid  -ultima version\\telerikblazorinvoice-crud\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\proyecto_blazor\\blazorzapipura\\blazoroe01\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|c:\\users\\alejandra\\desktop\\telerik grid  -ultima version\\telerikblazorinvoice-crud\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{BCF40EBC-73BF-443D-8EBC-EB3F557BADCD}|BlazorOE01.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -38,32 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 324,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GridOE01t.razor",
-              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Pages\\GridOE01t.razor",
+              "DocumentMoniker": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\Pages\\GridOE01t.razor",
               "RelativeDocumentMoniker": "Pages\\GridOE01t.razor",
-              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Pages\\GridOE01t.razor",
+              "ToolTip": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\Pages\\GridOE01t.razor",
               "RelativeToolTip": "Pages\\GridOE01t.razor",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-20T18:29:34.099Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:141133141:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\Common\\OE01\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Common\\OE01\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\Common\\OE01\\CustomerService.cs",
+              "RelativeToolTip": "Common\\OE01\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T14:03:56.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BlazorTelerik.csproj",
-              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorTelerik.csproj",
+              "DocumentMoniker": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\BlazorTelerik.csproj",
               "RelativeDocumentMoniker": "BlazorTelerik.csproj",
-              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorTelerik.csproj",
+              "ToolTip": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\BlazorTelerik.csproj",
               "RelativeToolTip": "BlazorTelerik.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -72,11 +94,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BlazorOE01.csproj",
-              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorOE01.csproj",
+              "DocumentMoniker": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\BlazorOE01.csproj",
               "RelativeDocumentMoniker": "BlazorOE01.csproj",
-              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\BlazorOE01.csproj",
+              "ToolTip": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\BlazorOE01.csproj",
               "RelativeToolTip": "BlazorOE01.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -85,11 +107,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Program.cs",
+              "ToolTip": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,11 +119,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "app.css",
-              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\wwwroot\\css\\app.css",
+              "DocumentMoniker": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
-              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\wwwroot\\css\\app.css",
               "RelativeToolTip": "wwwroot\\css\\app.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -109,11 +131,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "App.razor",
-              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\App.razor",
+              "DocumentMoniker": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\App.razor",
               "RelativeDocumentMoniker": "App.razor",
-              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\App.razor",
+              "ToolTip": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\App.razor",
               "RelativeToolTip": "App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -121,15 +143,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DTODSGeneral.cs",
-              "DocumentMoniker": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Common\\OE01\\DTODSGeneral.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\Common\\OE01\\DTODSGeneral.cs",
               "RelativeDocumentMoniker": "Common\\OE01\\DTODSGeneral.cs",
-              "ToolTip": "C:\\Proyecto_Blazor\\BlazorZAPIpura\\BlazorOE01\\Common\\OE01\\DTODSGeneral.cs",
+              "ToolTip": "C:\\Users\\Alejandra\\Desktop\\Telerik Grid  -Ultima Version\\TelerikBlazorInvoice-crud\\Common\\OE01\\DTODSGeneral.cs",
               "RelativeToolTip": "Common\\OE01\\DTODSGeneral.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:02:44.592Z"
+              "WhenOpened": "2024-12-04T16:02:44.592Z",
+              "EditorCaption": ""
             }
           ]
         }
