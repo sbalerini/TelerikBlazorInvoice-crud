@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "KvVIl16f",
+  "version": "Xd2Lckwm",
   "assets": [
     {
       "hash": "sha256-mIctJBjrB3XI2p7cc8gnsGUpEqVKWDIxoSytpFBH9NQ=",
@@ -42,11 +42,11 @@ self.assetsManifest = {
       "url": "_content/Telerik.UI.for.Blazor.Trial/js/telerik-blazor.js"
     },
     {
-      "hash": "sha256-z4ZU8/2NCtRDFLCBmaWZZU3+ZiVqio9skavYmDpQyuo=",
+      "hash": "sha256-35tB75O9UXBXG1E3qqllq0R9mAPgSo/QwpvfYINO1AM=",
       "url": "_framework/BlazorOE01.pdb"
     },
     {
-      "hash": "sha256-Co2o+vUWZFwFvsw++NUPVooO8+0jEy1NRC/xhsmkAZQ=",
+      "hash": "sha256-OdSiVkSYUKwOAyY+1HQ6rHDcEMyVnzymraILo6s7sPc=",
       "url": "_framework/BlazorOE01.wasm"
     },
     {
@@ -156,6 +156,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-SYbOUq7Ft94cDoFgxDjUL9s2E4zlX0CTcu9VK8pKu3g=",
       "url": "_framework/Microsoft.Win32.Registry.wasm"
+    },
+    {
+      "hash": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
+      "url": "_framework/Newtonsoft.Json.wasm"
     },
     {
       "hash": "sha256-1nocZKeDtUj1YIhiSQKS27v8q6liG1hOZbPjOK7P7mk=",
@@ -846,7 +850,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.wasm"
     },
     {
-      "hash": "sha256-h744EiyTSDsrzJa7+cyXghvVXxLylS8zU8s/Acddr7M=",
+      "hash": "sha256-xJcIyt8Kle1IDKkbsfFKNJFNcVVumGeB8y1bmFrtSng=",
       "url": "_framework/blazor.boot.json"
     },
     {
