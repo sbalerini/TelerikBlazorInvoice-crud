@@ -3276,6 +3276,11 @@ C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\BlazorOE01.dll
 C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\refint\BlazorOE01.dll
 C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\BlazorOE01.pdb
 C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\ref\BlazorOE01.dll
-C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\compressed\2qfnaj2lga-ash0ryns9u.gz
-C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\compressed\foccs039ga-vohppubju4.gz
-C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\compressed\8me8tzl6ej-n0rjz738c5.gz
+C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\bin\Debug\net8.0\wwwroot\_framework\Newtonsoft.Json.wasm
+C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\bin\Debug\net8.0\wwwroot\_framework\Newtonsoft.Json.wasm.gz
+C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\webcil\Newtonsoft.Json.wasm
+C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\compressed\0bp673sfo5-qkbufwhni2.gz
+C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\compressed\2qfnaj2lga-p4p05ods4j.gz
+C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\compressed\foccs039ga-ny4ftaz4xj.gz
+C:\Proyecto_Blazor\BlazorZAPIpura\BlazorOE01\obj\Debug\net8.0\compressed\8me8tzl6ej-cqdt5mjdig.gz

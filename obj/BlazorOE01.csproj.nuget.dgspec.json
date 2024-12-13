@@ -72,6 +72,10 @@
               "version": "[9.0.0, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Telerik.DataSource.Trial": {
               "target": "Package",
               "version": "[3.0.3, )"

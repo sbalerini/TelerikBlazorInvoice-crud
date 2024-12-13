@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorOE01",
   "resources": {
-    "hash": "sha256-3owhNfr/nFN+0kGF2m/SodNsLpmP4jhly+De6A9EQlc=",
+    "hash": "sha256-HTbvhvQkVkXiT9Jg57fzQqn75bjZ65DIwH6DmNbDZNc=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -40,6 +40,7 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-pVrYOTfjb2ITls3LKIByW1t8jwOAWFhmkIVDewtJ1GE=",
       "Microsoft.JSInterop.wasm": "sha256-okH//v00d9qA97lMQaTcXOMrfK8IIcOYOfzcEhcQle8=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-FWBbfufvNOmor0iVsxtEPG3l1VI97wMYStE1/bHHo9w=",
+      "Newtonsoft.Json.wasm": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
       "System.IO.Pipelines.wasm": "sha256-JqVBy6SV+3qk+IK3VJiyIDt9CsVk6b1/ytTXmrI4mTM=",
       "Telerik.DataSource.wasm": "sha256-hNPg7BrP5Oq33f6sNrFX0qKbF2ELRnyRQXLkIe4JLxk=",
       "Telerik.Documents.Core.wasm": "sha256-637wAk9opv9cCM/AnSI+g8VXKN/DF338eqcIuPkgu/k=",
@@ -219,10 +220,10 @@
       "mscorlib.wasm": "sha256-04e4k5XU8HWGB/dq/2+j84xzzGPflTs0IYWI0OxogVc=",
       "netstandard.wasm": "sha256-gnGZURPnoSmjXuYNCOJi5tt8qn2LRImWgue1Ru3/TDQ=",
       "System.Private.CoreLib.wasm": "sha256-6w3jYr0arcp8jnt4aeqh+AmqrLA6q7jl9rQYAwLzE0M=",
-      "BlazorOE01.wasm": "sha256-Co2o+vUWZFwFvsw++NUPVooO8+0jEy1NRC/xhsmkAZQ="
+      "BlazorOE01.wasm": "sha256-OdSiVkSYUKwOAyY+1HQ6rHDcEMyVnzymraILo6s7sPc="
     },
     "pdb": {
-      "BlazorOE01.pdb": "sha256-z4ZU8/2NCtRDFLCBmaWZZU3+ZiVqio9skavYmDpQyuo="
+      "BlazorOE01.pdb": "sha256-35tB75O9UXBXG1E3qqllq0R9mAPgSo/QwpvfYINO1AM="
     }
   },
   "cacheBootResources": true,

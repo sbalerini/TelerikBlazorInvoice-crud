@@ -4,46 +4,45 @@
 ﻿@using BlazorOE01.Pages
 @using System.IO
 @using System.Dynamic
-
-
+@using System.Text.Json;
+@using Newtonsoft.Json;
 @using Telerik.DataSource;
+@using Telerik.Blazor;
 
 
-<h3>Invoice</h3>
+<h3>Facturas</h3>
 
 <div class="container-fluid my-3 py-3">
     <div class="row">
         <div class="col-12">
             <div class="card mt-8" id="basic-info">
                 <div class="card-body pt-0">
+                    <!-- Button to Open Dialog -->
                     <div class="row">
-                        <div class="col-sm-2 col-2">
+                        <div class="col-sm-2 col-3 mt-4">
                             <div class="input-group input-group-static">
-                                <label>Top</label>
+                                <label>Nro factura: </label>
                                 <TelerikNumericTextBox Min="0" Class="form-control" @bind-Value="txtTop" />
                             </div>
                         </div>
                     </div><br />
-                    <div class="col-4 col-xs-6 md-5">
-                        <button class="btn btn-primary" type="button" @onclick="@MostrarDatos">Ver Datos</button>
+                    <div class="col-4 col-xs-6 md-3">
+                        <div class="report-button-wrapper demo-section k-form k-form-md">
+                            <TelerikButton ThemeColor="@(ThemeConstants.Button.ThemeColor.Primary)" OnClick="@MostrarDatos" Enabled="@(!Visible)">
+                                VER DATOS
+                                <TelerikLoader Class="loader-indicator" ThemeColor="light" Visible="@Visible"></TelerikLoader>
+                            </TelerikButton>
 
+                        </div>
                     </div>
-
-                    <div class="col-3 col-xs-6 mt-3">
-                        <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">Export to Excel</GridCommandButton>
-                    </div>
-                    <div class="col-3">
-                        <TelerikButton OnClick="@(async () => await GridRef.SaveAsExcelFileAsync())">Descarga Excel</TelerikButton>
-
-                    </div>
+                   
                 </div>
-                <div class="m-8 mt-4">
+                <div class="m-8 mt-1">
                     <TelerikGrid @ref="@GridRef"
                     Data="@ttInvoices"
                     OnDelete="@DeleteHandler"
                     OnUpdate="@UpdateHandler"
                     OnCreate="@CreateHandler"
-
                     ConfirmDelete="true"
                     Groupable="true"
                     FilterMode="GridFilterMode.FilterMenu"
@@ -54,10 +53,23 @@
                     Sortable="true"
                     SortMode="@SortMode.Single"
                     Pageable="true"
-                    PageSize="15">
-
+                    PageSize="10">
                         <GridExport>
-                            <GridExcelExport FileName="telerik-grid-export" AllPages="@ExportAllPages" />
+                            @if (!string.IsNullOrWhiteSpace(Message) && descripcion == null)
+                            {
+                                <div class="col-3" style="text-align: right;">
+
+                                    <p>@Message</p>
+                                </div>
+                            }
+                            @if (descripcion != null && estado == "OK")
+                            {
+                                <div id="" class="alert alert-success" role="alert">@descripcion </div>
+                            }
+                            else if (estado == "Error")
+                            {
+                                <div id="" class="alert alert-danger" role="alert">@descripcion </div>
+                            }
                         </GridExport>
 
                         <GridColumns>
@@ -65,13 +77,8 @@
                             @foreach (var col in typeof(Ttinvoice).GetProperties())
                             {
                                 <GridColumn Field="@(col.Name)" Width="80px" Title="@(col.Name)" Lockable="true" />
-
-
                             }
-
                             <GridCommandColumn Width="260px">
-
-
                                 <GridCommandButton Command="Edit" Icon="@SvgIcon.Pencil" ThemeColor="@ThemeConstants.Button.ThemeColor.Primary">Editar</GridCommandButton>
                                 <GridCommandButton Command="Delete" Icon="@SvgIcon.Trash">Delete</GridCommandButton>
                             </GridCommandColumn>
@@ -79,35 +86,49 @@
                         </GridColumns>
                         <GridToolBarTemplate>
                             <GridCommandButton Command="Add" Icon="@SvgIcon.Plus">Agregar Factura</GridCommandButton>
+                            <TelerikButton OnClick="@(async () => await GridRef.SaveAsExcelFileAsync())">Descarga Excel</TelerikButton>
                         </GridToolBarTemplate>
+
+
 
                     </TelerikGrid>
                 </div>
+
+
             </div>
         </div>
     </div>
 </div>
 
 @code {
+    private DateTime? SelectedDate { get; set; }
+    bool Visible { get; set; }
+    string Message { get; set; }
+
+    async Task GenerateReport()
+    {
+        Message = "Generando reporte...";
+        Visible = true;
+        Task.Delay(6000);
+    }
+
 
 
     protected override async Task OnInitializedAsync()
     {
         //  Products = new ObservableCollection<Product>(data);
+        await MostrarDatos();
     }
 
 
     private TelerikGrid<Ttinvoice> GridRef { get; set; }
 
-    protected override void OnInitialized()
+    protected async override void OnInitialized()
     {
-        LoadData();
+        // await MostrarDatos();
     }
 
-    private void LoadData()
-    {
-        // Data = employeeDirectoryService.GetEmployeeDirectories();
-    }
+
 
 
 
@@ -122,12 +143,12 @@
         exportedExcelStream = new MemoryStream(finalizedStream.ToArray());
     }
 
-
+    string estado, descripcion;
 
     public async Task CreateHandler(GridCommandEventArgs args)
     {
         string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice";
-
+        
 
         var arsItem = (Ttinvoice)args.Item;
 
@@ -135,7 +156,8 @@
         {
                 dsGeneral = new Dsgeneral
                 {
-                    ttinvoice = new Ttinvoice[] { arsItem }
+                    ttinvoice = new Ttinvoice[] { arsItem },
+                            ttestados = new Ttestados[0]
                 }
         };
 
@@ -143,9 +165,15 @@
         using (HttpClient httpClient = new HttpClient())
         {
             var response = await httpClient.PostAsJsonAsync(baseURL, rootObject);
-            Console.WriteLine(response);
+
             if (response.IsSuccessStatusCode)
             {
+              
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(jsonResponse);
+                var rootObject1 = JsonConvert.DeserializeObject<Rootobject>(jsonResponse);
+                estado = rootObject1.dsGeneral.ttestados[0].Estado;
+                descripcion = rootObject1.dsGeneral.ttestados[0].Descripcion;
                 await MostrarDatos();
             }
         }
@@ -161,11 +189,13 @@
 
         var arsItem = (Ttinvoice)args.Item;
 
+
         var rootObject = new Rootobject
         {
                 dsGeneral = new Dsgeneral
                 {
-                    ttinvoice = new Ttinvoice[] { arsItem }
+                    ttinvoice = new Ttinvoice[] { arsItem },
+                    ttestados = new Ttestados[0]
                 }
         };
 
@@ -176,6 +206,11 @@
             Console.WriteLine(response);
             if (response.IsSuccessStatusCode)
             {
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(jsonResponse);
+                var rootObject1 = JsonConvert.DeserializeObject<Rootobject>(jsonResponse);
+                estado = rootObject1.dsGeneral.ttestados[0].Estado;
+                descripcion = rootObject1.dsGeneral.ttestados[0].Descripcion;
                 await MostrarDatos();
             }
         }
@@ -189,9 +224,10 @@
         var arsItem = (Ttinvoice)args.Item;
         int dr = arsItem.Invoicenum;
         int dr2 = arsItem.CustNum;
+        int dr3 = arsItem.OrderNum;
         string cadena = dr.ToString();
 
-        string baseURL = $"http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice?wId={dr}&wId2={dr2}";
+        string baseURL = $"http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/Invoice?wId={dr}&wId2={dr2}&wId3={dr3}";
 
         using (HttpClient httpClient = new HttpClient())
         {
@@ -199,6 +235,11 @@
             Console.WriteLine(response);
             if (response.IsSuccessStatusCode)
             {
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(jsonResponse);
+                var rootObject1 = JsonConvert.DeserializeObject<Rootobject>(jsonResponse);
+                estado = rootObject1.dsGeneral.ttestados[0].Estado;
+                descripcion = rootObject1.dsGeneral.ttestados[0].Descripcion;
                 await MostrarDatos();
             }
         }
@@ -217,6 +258,8 @@
 
     private async Task<List<Ttinvoice>> GetInvoice(int itop)
     {
+
+        GenerateReport();
         List<Ttinvoice> ttInvoices = new();
         string baseURL = "http://192.168.10.54:8810/Ordenes/rest/DEMOOE1Service/";
 
@@ -235,6 +278,9 @@
                         var response = await request1.Content.ReadFromJsonAsync<Rootobject>();
                         ttInvoices = response.dsGeneral.ttinvoice.ToList();
 
+                        Visible = false;
+                        Message = "Tu reporte ha sido generado con exito.";
+
                     }
 
                 }
@@ -247,7 +293,14 @@
                     if (request1.IsSuccessStatusCode)
                     {
                         var response = await request1.Content.ReadFromJsonAsync<Rootobject>();
+
                         ttInvoices = response.dsGeneral.ttinvoice.ToList();
+                       
+                            Visible = false;
+                            Message = "Tu registro ha sido encontrado con exito.";
+
+                       
+
 
                     }
 
