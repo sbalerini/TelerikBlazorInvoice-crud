@@ -10,11 +10,16 @@
 @using Telerik.Blazor;
 @using Microsoft.AspNetCore.Components.Authorization
 
+@using BlazorOE01.Resources
+@using System.Globalization
+@using Telerik.Blazor.Services
 
-<h3>Facturas</h3>
+@inject ITelerikStringLocalizer TelerikLocalizer
 
-<AuthorizeView>
-    <Authorized Context="authContext">
+<h3>@TelerikLocalizer[nameof(TelerikMessages.Principal_Title)]</h3>
+
+
+
         <div class="container-fluid my-3 py-3">
             <!-- Rest of the content -->
             <div class="container-fluid my-3 py-3">
@@ -26,7 +31,7 @@
                                 <div class="row">
                                     <div class="col-sm-2 col-3 mt-4">
                                         <div class="input-group input-group-static">
-                                            <label>Nro factura: </label>
+                                    <label>@TelerikLocalizer[nameof(TelerikMessages.Subtitle)] </label>
                                             <TelerikNumericTextBox Min="0" Class="form-control" @bind-Value="txtTop" />
                                         </div>
                                     </div>
@@ -34,7 +39,7 @@
                                 <div class="col-4 col-xs-6 md-3">
                                     <div class="report-button-wrapper demo-section k-form k-form-md">
                                         <TelerikButton ThemeColor="@(ThemeConstants.Button.ThemeColor.Primary)" OnClick="@MostrarDatos" Enabled="@(!Visible)">
-                                            VER DATOS
+                                    @TelerikLocalizer[nameof(TelerikMessages.View_Data)]
                                             <TelerikLoader Class="loader-indicator" ThemeColor="light" Visible="@Visible"></TelerikLoader>
                                         </TelerikButton>
 
@@ -82,14 +87,14 @@
                                             <GridColumn Field="@(col.Name)" Width="80px" Title="@(col.Name)" Lockable="true" />
                                         }
                                         <GridCommandColumn Width="260px">
-                                            <GridCommandButton Command="Edit" Icon="@SvgIcon.Pencil" ThemeColor="@ThemeConstants.Button.ThemeColor.Primary">Editar</GridCommandButton>
-                                            <GridCommandButton Command="Delete" Icon="@SvgIcon.Trash">Delete</GridCommandButton>
+                                    <GridCommandButton Command="Edit" Icon="@SvgIcon.Pencil" ThemeColor="@ThemeConstants.Button.ThemeColor.Primary">@TelerikLocalizer[nameof(TelerikMessages.Bill_Edit)]</GridCommandButton>
+                                    <GridCommandButton Command="Delete" Icon="@SvgIcon.Trash">@TelerikLocalizer[nameof(TelerikMessages.Bill_Delete)]</GridCommandButton>
                                         </GridCommandColumn>
 
                                     </GridColumns>
                                     <GridToolBarTemplate>
-                                        <GridCommandButton Command="Add" Icon="@SvgIcon.Plus">Agregar Factura</GridCommandButton>
-                                        <TelerikButton OnClick="@(async () => await GridRef.SaveAsExcelFileAsync())">Descarga Excel</TelerikButton>
+                                <GridCommandButton Command="Add" Icon="@SvgIcon.Plus">@TelerikLocalizer[nameof(TelerikMessages.Bill_Create)]</GridCommandButton>
+                                <TelerikButton OnClick="@(async () => await GridRef.SaveAsExcelFileAsync())">@TelerikLocalizer[nameof(TelerikMessages.Download_Excel)]</TelerikButton>
                                     </GridToolBarTemplate>
                                 </TelerikGrid>
                             </div>
@@ -99,8 +104,6 @@
                 </div>
             </div>
         </div>
-    </Authorized>
-</AuthorizeView>
 
 
 @code {
@@ -282,7 +285,7 @@
                         ttInvoices = response.dsGeneral.ttinvoice.ToList();
 
                         Visible = false;
-                        Message = "Tu reporte ha sido generado con exito.";
+                        Message = @TelerikLocalizer[nameof(TelerikMessages.Message_Report)];
 
                     }
 
@@ -300,7 +303,7 @@
                         ttInvoices = response.dsGeneral.ttinvoice.ToList();
                        
                             Visible = false;
-                            Message = "Tu registro ha sido encontrado con exito.";
+                        Message = @TelerikLocalizer[nameof(TelerikMessages.Message_Report)];
 
                        
 
